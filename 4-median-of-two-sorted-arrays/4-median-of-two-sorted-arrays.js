@@ -43,7 +43,6 @@ var findMedianSortedArrays = function(nums1, nums2) {
             nums2[partitionIndex_nums2] : Infinity
         
         if (nums1_leftPartMax <= nums2_rightPartMin && nums2_leftPartMax <= nums1_rightPartMin){
-            console.log({nums1_leftPartMax,nums2_leftPartMax,nums1_rightPartMin,nums2_rightPartMin})
             //we have arrived at the correct partition, return the median
             if ((m+n)%2 === 0){
                 let medianVal = (Math.max(nums1_leftPartMax, nums2_leftPartMax) + Math.min(nums1_rightPartMin, nums2_rightPartMin)) /2
